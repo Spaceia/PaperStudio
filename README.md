@@ -4,7 +4,14 @@
 
 **PaperStudio** 是一个基于 Web 的轻量级信笺纸、稿纸设计工具。它允许用户通过简单的拖拽和配置，设计出符合传统书写习惯或现代商务风格的信纸，并支持导出为 PDF 或直接打印。
 
+演示：https://jingguanzhang.github.io/PaperStudio/
+
+
 项目采用单 HTML 文件架构（依赖少量静态资源），无需复杂的后端环境，即开即用。
+<img width="1920" height="877" alt="QQ截图20251207180511" src="https://github.com/user-attachments/assets/f7e2364e-58be-4c85-b463-e009d2721275" />
+
+
+
 
 ## ✨ 主要特性
 
