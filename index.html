@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PaperStudio - 信笺、稿纸设计工具</title>
+    <title>PaperStudio - 打印纸设计工具</title>
     <script src="./static/tailwindcss.js"></script>
     <link href="./static/toastify.min.css" rel="stylesheet" />
     <script src="./static/fabric.min.js"></script>
@@ -306,7 +306,45 @@
         </div>
       </div>
     </div>
+    <div id="contactModal" class="hidden fixed inset-0 z-[60] flex items-center justify-center modal-backdrop transition-opacity duration-200">
+      <div class="bg-white rounded-xl shadow-2xl p-6 w-[320px] text-center relative transform transition-all scale-100">
+        <button onclick="App.ui.hideModal('contactModal')" class="absolute top-3 right-3 text-slate-400 hover:text-slate-600 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition">
+          <i class="ph ph-x text-lg"></i>
+        </button>
 
+        <h3 class="text-lg font-bold text-slate-800 mb-1">联系开发者</h3>
+
+        <div class="bg-white p-2 rounded-xl border border-gray-100 shadow-inner inline-block mb-4">
+          <img src="./static/addme.jpg" alt="联系作者" class="w-48 h-48 object-contain rounded-lg" />
+        </div>
+
+        <div class="space-y-1">
+          <p class="text-sm font-medium text-slate-700">扫码添加微信</p>
+          <p class="text-sm text-slate-400">反馈建议 · 交流</p>
+        </div>
+      </div>
+    </div>
+    <div id="sponsorModal" class="hidden fixed inset-0 z-[60] flex items-center justify-center modal-backdrop transition-opacity duration-200">
+      <div class="bg-white rounded-xl shadow-2xl p-6 w-[320px] text-center relative transform transition-all scale-100">
+        <button onclick="App.ui.hideModal('sponsorModal')" class="absolute top-3 right-3 text-slate-400 hover:text-slate-600 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition">
+          <i class="ph ph-x text-lg"></i>
+        </button>
+
+        <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-3">
+          <i class="ph ph-heart text-2xl text-red-500"></i>
+        </div>
+
+        <h3 class="text-lg font-bold text-slate-800 mb-1">感谢支持</h3>
+        <div class="p-2 rounded-xl border border-orange-100 shadow-inner inline-block mb-4">
+          <img src="./static/support.jpg" alt="微信收款码" class="w-48 h-48 object-contain rounded-lg mix-blend-multiply" />
+        </div>
+
+        <div class="space-y-1">
+          <p class="text-sm font-medium text-slate-700">如果觉得工具好用</p>
+          <p class="text-sm text-slate-400">欢迎请作者喝杯咖啡，激励持续更新</p>
+        </div>
+      </div>
+    </div>
     <div id="tableModal" class="hidden fixed inset-0 z-50 items-center justify-center modal-backdrop">
       <div class="bg-white w-[98vw] h-[95vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden relative">
         <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100 z-20 bg-white shadow-sm shrink-0">
@@ -430,12 +468,12 @@
             <div class="flex gap-1">
               <button onclick="App.tableEditor.deleteCR('row')" class="relative flex items-center justify-center p-1.5 hover:bg-gray-100 rounded text-slate-400 transition group" title="删除选中行">
                 <i class="ph ph-rows text-lg"></i>
-                <i class="ph ph-trash text-sm absolute -bottom-1 -right-1  rounded-full p-[1px] shadow-sm "></i>
+                <i class="ph ph-trash text-sm absolute -bottom-1 -right-1 rounded-full p-[1px] shadow-sm"></i>
               </button>
 
               <button onclick="App.tableEditor.deleteCR('col')" class="relative flex items-center justify-center p-1.5 hover:bg-gray-100 rounded text-slate-400 transition group" title="删除选中列">
                 <i class="ph ph-columns text-lg"></i>
-                <i class="ph ph-trash text-sm absolute -bottom-1 -right-1  rounded-full p-[1px] shadow-sm "></i>
+                <i class="ph ph-trash text-sm absolute -bottom-1 -right-1 rounded-full p-[1px] shadow-sm"></i>
               </button>
             </div>
 
@@ -526,6 +564,16 @@
       </div>
 
       <div class="w-80 flex justify-end gap-2">
+        <button
+          onclick="App.ui.showModal('sponsorModal')"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-50 hover:bg-red-100 text-red-600 border border-red-100 transition text-xs font-bold mr-1"
+        >
+          <i class="ph ph-heart-straight text-lg"></i>
+          <span>支持作者</span>
+        </button>
+        <button onclick="App.ui.showModal('contactModal')" class="flex items-center gap-1 px-3 py-1.5 rounded hover:bg-gray-100 text-md font-medium transition text-gray-600" title="联系作者">
+          <i class="ph ph-wechat-logo text-lg"></i>
+        </button>
         <button onclick="App.ui.toggleFullScreen()" class="flex items-center gap-1 px-3 py-1.5 rounded hover:bg-gray-100 text-md font-medium transition text-gray-600" title="全屏模式">
           <i id="fsIcon" class="ph ph-corners-out text-lg"></i>
         </button>
@@ -959,7 +1007,7 @@
                 </div>
                 <div class="w-16">
                   <label class="compact-label">线宽</label>
-                  <input type="number" id="lineStrokeWidth" min="0" max="50" step="0.1"  oninput="App.ui.setProp('strokeWidth', parseFloat(this.value))" class="w-full compact-input border rounded" />
+                  <input type="number" id="lineStrokeWidth" min="0" max="50" step="0.1" oninput="App.ui.setProp('strokeWidth', parseFloat(this.value))" class="w-full compact-input border rounded" />
                 </div>
               </div>
 
@@ -1445,7 +1493,7 @@
             composition: { columnCount: 12, rowCount: 15, strokeWidth: 1, gridColor: "#e11d48", doubleBorder: true },
             english: { rowCount: 15, englishLineGap: 3, englishGroupGap: 10, englishOffset: 0, strokeWidth: 1, gridColor: "#8a91a8" },
             music: { staffCount: 12, staffLineGap: 2.5, staffGroupGap: 12, strokeWidth: 1, staffLineCount: 5, gridColor: "#8a91a8" },
-            tianzige: { tianSize: 18, tianInnerScale: 0.5, strokeWidth: 1, doubleBorder: true },
+            tianzige: { tianSize: 18, tianInnerScale: 0.5, strokeWidth: 1, doubleBorder: true, gridDashed: true },
             mizige: { tianSize: 18, tianInnerScale: 0.5, strokeWidth: 1, doubleBorder: true, gridDashed: true },
             huizige: { tianSize: 18, tianInnerScale: 0.4, strokeWidth: 1, doubleBorder: true, huiInnerW: 8, huiInnerH: 10, gridDashed: true },
             jiugongge: { tianSize: 18, tianInnerScale: 0.4, strokeWidth: 1, doubleBorder: true, jiuCols: 3, jiuRows: 3 },
@@ -4375,6 +4423,13 @@
         icon.className = `ph ph-corners-${document.fullscreenElement ? "in" : "out"} text-lg`;
         setTimeout(() => App.zoom.autoFit(), 100);
       });
+
+      document.getElementById("contactModal").onclick = (e) => {
+        if (e.target.id === "contactModal") App.ui.hideModal("contactModal");
+      };
+      document.getElementById("sponsorModal").onclick = (e) => {
+        if (e.target.id === "sponsorModal") App.ui.hideModal("sponsorModal");
+      };
 
       window.onload = function () {
         App.init();
